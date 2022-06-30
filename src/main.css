@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Roboto&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(141, 172, 190);
+}
+
+.primary-title, .secondary-title {
+    color: rgb(20, 20, 20);
+}
+
+.container-form {
+    width: 40%;
+    height: 40%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 4px 6px rgba(36, 36, 36, 0.288);
+    background-color: #fff;
+}
+
+.form-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-control {
+    width: 25vw;
+    height: 5vh;
+    padding: 10px;
+    margin: 6px;
+    border: unset;
+    border-radius: 4px;
+    background: #ece9e9;
+}
+
+.btn, .btn-logout { 
+    width: 10vw;
+    height: 7vh;
+    border: unset;
+    border-radius: 4px;
+    background: #ece9e9;
+}
+
+.btn:hover, .btn-logout:hover {
+    background: #ccc9c9;
+}
+
+.btn-logout {
+    width: 14vw;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+
+    .container-form {
+        width: 60%;
+    }
+
+    .form-control {
+        width: 35vw;
+        height: 6vh;
+    }
+
+    .btn {
+        width: 30%;
+    }
+}
